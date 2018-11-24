@@ -1,0 +1,14 @@
+{
+    "name": "opendata",
+    "version": "1.0.0",
+    "description": "An awareness site to break stigma of people not knowing all info given by Gov’t and to know how you could access info to the Gov’t.",
+    "main": "index.js",
+    "scripts": {
+        "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    },
+    "author": "Richard Evaristo",
+    "license": "ISC",
+    "dependencies": {
+        "node-sass": "^4.10.0"
+    }
+}
