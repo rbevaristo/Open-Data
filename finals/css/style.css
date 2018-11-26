@@ -5,7 +5,9 @@
 body {
   font-family: "Oswald", sans-serif;
   background: url("../images/Background.jpg") center center;
-  background-size: cover; }
+  background-size: cover;
+  padding: 0;
+  margin: 0; }
 
 p {
   font-family: "Hind Guntur", sans-serif; }
@@ -166,7 +168,7 @@ header .navbar {
     right: 50%;
     z-index: 2; }
     header .navbar .brand .logo {
-      width: 100px;
+      width: 150px;
       height: 100px;
       text-align: right; }
   header .navbar ul {
@@ -190,49 +192,47 @@ header .navbar {
       header .navbar ul li.active {
         background: #fff; }
 
-#home {
-  height: 90vh; }
-  #home .content {
-    width: 100%;
-    text-align: center;
-    margin-top: 10%; }
-    #home .content .project {
-      display: block;
-      font-size: 7rem;
-      font-weight: 500;
-      color: #f0f0f0;
-      text-transform: uppercase;
-      letter-spacing: 5px; }
-    #home .content .title {
-      display: block;
-      font-size: 6.5rem;
-      font-weight: 200;
-      color: #141414;
-      text-transform: uppercase;
-      margin-top: -40px; }
-    #home .content .subtitle {
-      display: block;
-      font-size: 2rem;
-      font-weight: 200;
-      color: #f0f0f0;
-      text-transform: lowercase; }
-  #home .btn {
-    text-align: center;
-    margin-top: 30px; }
-    #home .btn .btn-primary {
-      background-color: rgba(226, 66, 66, 0.8);
-      font-size: 1.3rem;
-      font-weight: 100;
-      color: #f0f0f0;
-      border: 0;
-      padding: 10px 25px;
-      letter-spacing: 5px;
-      cursor: pointer; }
-      #home .btn .btn-primary:hover {
-        background-color: #e24242; }
+#home .content {
+  width: 100%;
+  text-align: center;
+  margin-top: 10%; }
+  #home .content .project {
+    display: block;
+    font-size: 7rem;
+    font-weight: 500;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    letter-spacing: 5px; }
+  #home .content .title {
+    display: block;
+    font-size: 6.5rem;
+    font-weight: 200;
+    color: #141414;
+    text-transform: uppercase;
+    margin-top: -40px; }
+  #home .content .subtitle {
+    display: block;
+    font-size: 2rem;
+    font-weight: 200;
+    color: #f0f0f0;
+    text-transform: lowercase; }
+
+#home .btn {
+  text-align: center;
+  margin-top: 30px; }
+  #home .btn .btn-primary {
+    background-color: rgba(226, 66, 66, 0.8);
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: #f0f0f0;
+    border: 0;
+    padding: 10px 25px;
+    letter-spacing: 5px;
+    cursor: pointer; }
+    #home .btn .btn-primary:hover {
+      background-color: #e24242; }
 
 #background {
-  height: 120vh;
   width: 100%;
   margin-top: 0; }
   #background h1 {
@@ -256,7 +256,6 @@ header .navbar {
     border-radius: 50%; }
 
 #about {
-  height: 100vh;
   width: 100%;
   padding: 30px; }
   #about h1 {
@@ -296,10 +295,52 @@ header .navbar {
         font-weight: 400;
         line-height: 30px; }
 
-footer {
-  height: 10vh;
+#footer {
   background: rgba(240, 240, 240, 0.8);
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0; }
+  margin-top: 100px;
+  height: 25vh; }
+  #footer .logo {
+    background: url("../images/logo.png") no-repeat center center;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    display: inline-block; }
+  #footer .content span {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    display: block; }
+  #footer .footer-logo {
+    background: url("../images/logo.png") no-repeat center center;
+    background-size: cover;
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    right: 50%;
+    margin-top: -80px; }
+  #footer .social {
+    text-align: right; }
+    #footer .social span {
+      color: #141414;
+      display: block;
+      text-align: center;
+      margin-left: 60px;
+      line-height: 0px;
+      font-size: 1.3rem;
+      font-weight: 300;
+      text-decoration: underline; }
+    #footer .social div {
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      margin-left: -20px; }
+    #footer .social .facebook {
+      background: url("../images/footer_fb.png") no-repeat center center;
+      background-size: cover; }
+    #footer .social .twitter {
+      background: url("../images/footer_twitter.png") no-repeat center center;
+      background-size: cover; }
+    #footer .social .instagram {
+      background: url("../images/footer_instagram.png") no-repeat center center;
+      background-size: cover; }
