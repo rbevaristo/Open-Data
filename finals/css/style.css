@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css?family=Hind+Guntur:300,400|Oswald:200,300,400");
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Oswald", sans-serif;
+  background: url("../images/Background.jpg") center center;
+  background-size: cover; }
+
+p {
+  font-family: "Hind Guntur", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Oswald; }
+
+.container {
+  width: 100%;
+  margin: 0 auto; }
+
+.container:after,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+[class*='col-'] {
+  float: left;
+  padding: 1em;
+  width: 100%;
+  min-height: 1px;
+  display: inline-block; }
+
+@media only screen and (min-width: 0px) {
+  .container {
+    width: 95%;
+    max-width: 1200px; }
+  .col-sm-1 {
+    width: 8.33333%; }
+  .col-sm-2 {
+    width: 16.66667%; }
+  .col-sm-3 {
+    width: 25%; }
+  .col-sm-4 {
+    width: 33.33333%; }
+  .col-sm-5 {
+    width: 41.66667%; }
+  .col-sm-6 {
+    width: 50%; }
+  .col-sm-7 {
+    width: 58.33333%; }
+  .col-sm-8 {
+    width: 66.66667%; }
+  .col-sm-9 {
+    width: 75%; }
+  .col-sm-10 {
+    width: 83.33333%; }
+  .col-sm-11 {
+    width: 91.66667%; }
+  .col-sm-12 {
+    width: 100%; } }
+
+@media only screen and (min-width: 700px) {
+  .container {
+    width: 95%;
+    max-width: 1200px; }
+  .col-md-1 {
+    width: 8.33333%; }
+  .col-md-2 {
+    width: 16.66667%; }
+  .col-md-3 {
+    width: 25%; }
+  .col-md-4 {
+    width: 33.33333%; }
+  .col-md-5 {
+    width: 41.66667%; }
+  .col-md-6 {
+    width: 50%; }
+  .col-md-7 {
+    width: 58.33333%; }
+  .col-md-8 {
+    width: 66.66667%; }
+  .col-md-9 {
+    width: 75%; }
+  .col-md-10 {
+    width: 83.33333%; }
+  .col-md-11 {
+    width: 91.66667%; }
+  .col-md-12 {
+    width: 100%; } }
+
+@media only screen and (mid-width: 1008px) {
+  .container {
+    width: 95%;
+    max-width: 1200px; }
+  .col-lg-1 {
+    width: 8.33333%; }
+  .col-lg-2 {
+    width: 16.66667%; }
+  .col-lg-3 {
+    width: 25%; }
+  .col-lg-4 {
+    width: 33.33333%; }
+  .col-lg-5 {
+    width: 41.66667%; }
+  .col-lg-6 {
+    width: 50%; }
+  .col-lg-7 {
+    width: 58.33333%; }
+  .col-lg-8 {
+    width: 66.66667%; }
+  .col-lg-9 {
+    width: 75%; }
+  .col-lg-10 {
+    width: 83.33333%; }
+  .col-lg-11 {
+    width: 91.66667%; }
+  .col-lg-12 {
+    width: 100%; } }
+
+@media only screen and (min-width: 1300px) {
+  .container {
+    width: 95%;
+    max-width: 1200px; }
+  .col-xl-1 {
+    width: 8.33333%; }
+  .col-xl-2 {
+    width: 16.66667%; }
+  .col-xl-3 {
+    width: 25%; }
+  .col-xl-4 {
+    width: 33.33333%; }
+  .col-xl-5 {
+    width: 41.66667%; }
+  .col-xl-6 {
+    width: 50%; }
+  .col-xl-7 {
+    width: 58.33333%; }
+  .col-xl-8 {
+    width: 66.66667%; }
+  .col-xl-9 {
+    width: 75%; }
+  .col-xl-10 {
+    width: 83.33333%; }
+  .col-xl-11 {
+    width: 91.66667%; }
+  .col-xl-12 {
+    width: 100%; } }
+
+header .navbar {
+  width: 100%;
+  background: rgba(240, 240, 240, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  padding-right: 20px; }
+  header .navbar .brand {
+    text-align: center;
+    position: fixed;
+    right: 50%;
+    z-index: 2; }
+    header .navbar .brand .logo {
+      width: 100px;
+      height: 100px;
+      text-align: right; }
+  header .navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: right; }
+    header .navbar ul li {
+      padding: 5px 10px;
+      display: inline-block;
+      text-align: center;
+      line-height: 60px; }
+      header .navbar ul li a {
+        color: #141414;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 300; }
+      header .navbar ul li:hover {
+        background: #fff;
+        transition: all 0.3s ease-in-out; }
+      header .navbar ul li.active {
+        background: #fff; }
+
+#home {
+  height: 90vh; }
+  #home .content {
+    width: 100%;
+    text-align: center;
+    margin-top: 10%; }
+    #home .content .project {
+      display: block;
+      font-size: 7rem;
+      font-weight: 500;
+      color: #f0f0f0;
+      text-transform: uppercase;
+      letter-spacing: 5px; }
+    #home .content .title {
+      display: block;
+      font-size: 6.5rem;
+      font-weight: 200;
+      color: #141414;
+      text-transform: uppercase;
+      margin-top: -40px; }
+    #home .content .subtitle {
+      display: block;
+      font-size: 2rem;
+      font-weight: 200;
+      color: #f0f0f0;
+      text-transform: lowercase; }
+  #home .btn {
+    text-align: center;
+    margin-top: 30px; }
+    #home .btn .btn-primary {
+      background-color: rgba(226, 66, 66, 0.8);
+      font-size: 1.3rem;
+      font-weight: 100;
+      color: #f0f0f0;
+      border: 0;
+      padding: 10px 25px;
+      letter-spacing: 5px;
+      cursor: pointer; }
+      #home .btn .btn-primary:hover {
+        background-color: #e24242; }
+
+#background {
+  height: 120vh;
+  width: 100%;
+  margin-top: 0; }
+  #background h1 {
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 200;
+    text-transform: uppercase; }
+  #background .content {
+    color: #f0f0f0;
+    font-size: 2rem;
+    font-weight: 150;
+    margin-left: 20px;
+    line-height: 40px;
+    padding: 0 40px; }
+  #background .pic {
+    width: 450px;
+    height: 450px;
+    background: url("../images/pic1.png") no-repeat center center;
+    background-size: cover;
+    border-radius: 50%; }
+
+#about {
+  height: 100vh;
+  width: 100%;
+  padding: 30px; }
+  #about h1 {
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 200;
+    text-transform: uppercase; }
+  #about .card {
+    background-color: rgba(240, 240, 240, 0.6);
+    transition: all 0.3s ease-in-out;
+    width: 90%;
+    height: 70vh;
+    padding: 20px;
+    text-align: center; }
+    #about .card:hover {
+      background-color: #f0f0f0; }
+    #about .card .user-img {
+      text-align: center;
+      margin-left: 10px; }
+      #about .card .user-img img {
+        text-align: center;
+        width: 270px;
+        height: 160px; }
+    #about .card .user-content {
+      text-align: center; }
+      #about .card .user-content .name {
+        color: #e24242; }
+      #about .card .user-content .position {
+        color: #e24242;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase; }
+      #about .card .user-content .content {
+        color: #141414;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 30px; }
+
+footer {
+  height: 10vh;
+  background: rgba(240, 240, 240, 0.8);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0; }

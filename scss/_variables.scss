@@ -1,1 +1,13 @@
-$primary-color: #444;
+$dark: #141414;
+$light: #f0f0f0;
+$darkLight: #F4F6F9;
+$primary: #e24242;
+$primary-hover: #ef4234;
+$secondary: #8d7b01;
+// Grid
+$grid-columns: 12;
+$grid-max-width: 1200px;
+$breakpoint-small: "only screen and (min-width: 0px)";
+$breakpoint-medium: "only screen and (min-width: 700px)";
+$breakpoint-large: "only screen and (mid-width: 1008px)";
+$breakpoint-xl: "only screen and (min-width: 1300px)";

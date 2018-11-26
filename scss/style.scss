@@ -1,4 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Hind+Guntur:300,400|Oswald:200,300,400');
+@import 'global';
 @import 'variables';
-* {
-    box-sizing: border-box;
+@import 'mixins';
+@import 'grid';
+@import 'header';
+@import 'home';
+@import 'background';
+@import 'about';
+@import 'blog';
+@import 'news';
+// Home
+#home {
+    height: 90vh;
+    .content {
+        width: 100%;
+        text-align: center;
+        margin-top: 10%;
+        .project {
+            display: block;
+            font-size: 7rem;
+            font-weight: 500;
+            color: $light;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+        .title {
+            display: block;
+            font-size: 6.5rem;
+            font-weight: 200;
+            color: $dark;
+            text-transform: uppercase;
+            margin-top: -40px;
+        }
+        .subtitle {
+            display: block;
+            font-size: 2rem;
+            font-weight: 200;
+            color: $light;
+            text-transform: lowercase;
+        }
+    }
+    .btn {
+        text-align: center;
+        margin-top: 30px;
+        .btn-primary {
+            @include hover-background($primary);
+            font-size: 1.3rem;
+            font-weight: 100;
+            color: $light;
+            border: 0;
+            padding: 10px 25px;
+            letter-spacing: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+#background {
+    height: 120vh;
+    width: 100%;
+    margin-top: 0;
+    h1 {
+        color: $light;
+        text-align: center;
+        font-size: 8rem;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+    .content {
+        color: $light;
+        font-size: 2rem;
+        font-weight: 150;
+        margin-left: 20px;
+        line-height: 40px;
+        padding: 0 40px;
+    }
+    .pic {
+        width: 450px;
+        height: 450px;
+        background: url('../images/pic1.png') no-repeat center center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+}
+
+#about {
+    height: 100vh;
+    width: 100%;
+    padding: 30px;
+    h1 {
+        color: $light;
+        text-align: center;
+        font-size: 8rem;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+    .card {
+        @include hover-card($light);
+        transition: all 0.3s ease-in-out;
+        width: 90%;
+        height: 70vh;
+        padding: 20px;
+        text-align: center;
+        .user-img {
+            text-align: center;
+            margin-left: 10px;
+            img {
+                text-align: center;
+                width: 270px;
+                height: 160px;
+            }
+        }
+        .user-content {
+            text-align: center;
+            .name {
+                color: $primary;
+            }
+            .position {
+                color: $primary;
+                font-size: 1.5rem;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            .content {
+                color: $dark;
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+footer {
+    height: 10vh;
+    background: rgba($light, 0.8);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
