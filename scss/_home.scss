@@ -1,0 +1,47 @@
+// Home
+#home {
+    height: 100vh;
+    .content {
+        width: 100%;
+        text-align: center;
+        margin-top: 10%;
+        .project {
+            display: block;
+            font-size: 7rem;
+            font-weight: 500;
+            color: $light;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+        .title {
+            display: block;
+            font-size: 6.5rem;
+            font-weight: 200;
+            color: $dark;
+            text-transform: uppercase;
+            margin-top: -40px;
+        }
+        .subtitle {
+            display: block;
+            font-size: 2rem;
+            font-weight: 200;
+            color: $light;
+            text-transform: lowercase;
+        }
+    }
+    .btn {
+        text-align: center;
+        margin-top: 30px;
+        a {
+            @include hover-background($primary);
+            font-size: 1.3rem;
+            text-decoration: none;
+            font-weight: 200;
+            color: $light;
+            border: 0;
+            padding: 10px 25px;
+            letter-spacing: 10px;
+            cursor: pointer;
+        }
+    }
+}
