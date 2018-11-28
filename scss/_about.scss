@@ -4,15 +4,13 @@
     h1 {
         color: $light;
         text-align: center;
-        font-size: 8rem;
+        font-size: 100px;
         font-weight: 200;
         text-transform: uppercase;
     }
     .card {
         @include hover-card($light);
-        transition: all 0.3s ease-in-out;
-        width: 90%;
-        height: 70vh;
+        width: 100%;
         padding: 20px;
         text-align: center;
         .user-img {
@@ -20,24 +18,25 @@
             margin-left: 10px;
             img {
                 text-align: center;
-                width: 270px;
-                height: 160px;
             }
         }
         .user-content {
-            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
             .name {
                 color: $primary;
+                font-size: 20px;
             }
             .position {
                 color: $primary;
-                font-size: 1.5rem;
+                font-size: 25px;
                 font-weight: bold;
                 text-transform: uppercase;
             }
             .content {
+                text-align: left;
                 color: $dark;
-                font-size: 1.5rem;
+                font-size: 25px;
                 font-weight: 400;
                 line-height: 30px;
             }

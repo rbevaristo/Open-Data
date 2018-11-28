@@ -26,3 +26,83 @@ h5,
 h6 {
     font-family: Oswald;
 }
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container:after,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*='col'] {
+    float: left;
+    padding: 1em;
+    width: 100%;
+    min-height: 1px;
+    display: inline-block
+}
+
+.col1 {
+    margin: 1.0416666667%;
+    width: 6.25%;
+}
+
+.col2 {
+    margin: 1.0416666667%;
+    width: 14.5833333333%;
+}
+
+.col3 {
+    margin: 1.0416666667%;
+    width: 22.9166666667%;
+}
+
+.col4 {
+    margin: 1.0416666667%;
+    width: 31.25%;
+}
+
+.col5 {
+    margin: 1.0416666667%;
+    width: 39.5833333333%;
+}
+
+.col6 {
+    margin: 1.0416666667%;
+    width: 47.9166666667%;
+}
+
+.col7 {
+    margin: 1.0416666667%;
+    width: 56.25%;
+}
+
+.col8 {
+    margin: 1.0416666667%;
+    width: 64.5833333333%;
+}
+
+.col9 {
+    margin: 1.0416666667%;
+    width: 72.9166666667%;
+}
+
+.col10 {
+    margin: 1.0416666667%;
+    width: 81.25%;
+}
+
+.col11 {
+    margin: 1.0416666667%;
+    width: 89.5833333333%;
+}
+
+.col12 {
+    margin: 1.0416666667%;
+    width: 97.9166666667%;
+}

@@ -1,13 +1,12 @@
 // Home
 #home {
-    height: 100vh;
     .content {
         width: 100%;
         text-align: center;
         margin-top: 10%;
         .project {
             display: block;
-            font-size: 7rem;
+            font-size: 100px;
             font-weight: 500;
             color: $light;
             text-transform: uppercase;
@@ -15,7 +14,7 @@
         }
         .title {
             display: block;
-            font-size: 6.5rem;
+            font-size: 100px;
             font-weight: 200;
             color: $dark;
             text-transform: uppercase;
@@ -23,7 +22,7 @@
         }
         .subtitle {
             display: block;
-            font-size: 2rem;
+            font-size: 30px;
             font-weight: 200;
             color: $light;
             text-transform: lowercase;
@@ -32,9 +31,10 @@
     .btn {
         text-align: center;
         margin-top: 30px;
+        margin-bottom: 200px;
         a {
-            @include hover-background($primary);
-            font-size: 1.3rem;
+            background: $primary;
+            font-size: 20px;
             text-decoration: none;
             font-weight: 200;
             color: $light;
