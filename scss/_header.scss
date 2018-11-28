@@ -9,6 +9,15 @@ header {
         z-index: 1;
         overflow: hidden;
         padding-right: 20px;
+        .project-title {
+            float: left;
+            padding: 15px 30px;
+            a {
+                text-decoration: none;
+                color: $dark;
+                font-size: 30px;
+            }
+        }
         .brand {
             text-align: center;
             position: fixed;
