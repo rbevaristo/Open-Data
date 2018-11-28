@@ -53,3 +53,43 @@
         }
     }
 }
+
+#news-media {
+    margin-top: 200px;
+    width: 100%;
+    text-align: center;
+    h1 {
+        color: $light;
+        text-align: center;
+        font-size: 8rem;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+    object {
+        width: 100%;
+    }
+}
+
+#contact-us {
+    margin-top: 200px;
+    width: 100%;
+    h1 {
+        color: $light;
+        text-align: center;
+        font-size: 8rem;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+    span {
+        display: block;
+        color: $light;
+        &.author {
+            font-size: 2rem;
+        }
+        &.school {
+            font-size: 2rem;
+            padding-top: 30px;
+        }
+        &.address {}
+    }
+}
