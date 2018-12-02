@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Hind+Guntur:300,400|Oswald:200,300,400");
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
 
 html {
   scroll-behavior: smooth; }
@@ -8,37 +10,7 @@ html {
 body {
   font-family: "Oswald", sans-serif;
   background: url("../images/Background.jpg") no-repeat center center;
-  background-size: cover;
-  padding: 0;
-  margin: 0; }
-
-p {
-  font-family: "Hind Guntur", sans-serif; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Oswald; }
-
-.container {
-  width: 100%;
-  margin: 0 auto; }
-
-.container:after,
-.row:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-[class*='col'] {
-  float: left;
-  padding: 1em;
-  width: 100%;
-  min-height: 1px;
-  display: inline-block; }
+  background-size: cover; }
 
 .col1 {
   margin: 1.0416666667%;
@@ -131,162 +103,194 @@ header .navbar {
       header .navbar ul li:hover {
         background: #fff;
         transition: all 0.3s ease-in-out; }
-      header .navbar ul li.active {
-        background: #fff; }
 
-#home .content {
+main div {
   width: 100%;
-  text-align: center;
-  margin-top: 10%; }
-  #home .content .project {
-    display: block;
-    font-size: 100px;
-    font-weight: 500;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 5px; }
-  #home .content .title {
-    display: block;
-    font-size: 100px;
-    font-weight: 200;
-    color: #141414;
-    text-transform: uppercase;
-    margin-top: -40px; }
-  #home .content .subtitle {
-    display: block;
-    font-size: 30px;
-    font-weight: 200;
-    color: #ffffff;
-    text-transform: lowercase; }
-
-#home .btn {
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 200px; }
-  #home .btn a {
-    background: #e24242;
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: 200;
-    color: #ffffff;
-    border: 0;
-    padding: 10px 25px;
-    letter-spacing: 10px;
-    cursor: pointer; }
-
-#background {
+  float: left;
+  padding: 16px;
   width: 100%;
-  margin-top: 0; }
-  #background h1 {
+  display: inline-block; }
+  main div#home {
+    text-align: center;
+    margin-top: 10%; }
+    main div#home .project {
+      display: block;
+      font-size: 100px;
+      font-weight: 500;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 5px; }
+    main div#home .title {
+      display: block;
+      font-size: 100px;
+      font-weight: 200;
+      color: #141414;
+      text-transform: uppercase;
+      margin-top: -40px; }
+    main div#home .subtitle {
+      display: block;
+      font-size: 30px;
+      font-weight: 200;
+      color: #ffffff;
+      text-transform: lowercase; }
+    main div#home .btn {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 200px; }
+      main div#home .btn a {
+        background: #e24242;
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: 200;
+        color: #ffffff;
+        border: 0;
+        padding: 10px 25px;
+        letter-spacing: 10px;
+        cursor: pointer; }
+  main div#background h1 {
     color: #ffffff;
     text-align: center;
     font-size: 100px;
     font-weight: 200;
     text-transform: uppercase; }
-  #background .content {
+  main div#background p {
     color: #ffffff;
     font-size: 25px;
     font-weight: 150;
     margin-left: 20px;
     line-height: 40px;
-    padding: 0 40px; }
-  #background .pic {
+    padding: 40px 0; }
+  main div#background .pic {
     width: 450px;
     height: 450px;
-    background: url("../images/pic1.png") no-repeat center center;
+    background: url("../images/Ioel.png") no-repeat center center;
     background-size: cover;
     border-radius: 50%; }
-
-#about {
-  width: 100%;
-  padding: 30px; }
-  #about h1 {
+  main div#about h1 {
     color: #ffffff;
     text-align: center;
     font-size: 100px;
     font-weight: 200;
     text-transform: uppercase; }
-  #about .card {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 10px;
-    box-sizing: border-box;
+  main div#about .card {
+    background: rgba(255, 255, 255, 0.5);
     width: 100%;
-    padding: 20px;
+    padding: 15px;
     text-align: center; }
-    #about .card .user-img {
+    main div#about .card .user-img {
       text-align: center;
       margin-left: 10px; }
-      #about .card .user-img img {
+      main div#about .card .user-img img {
         text-align: center; }
-    #about .card .user-content {
+    main div#about .card .user-content {
       padding-left: 20px;
       padding-right: 20px; }
-      #about .card .user-content .name {
+      main div#about .card .user-content .name {
         color: #e24242;
-        font-size: 20px; }
-      #about .card .user-content .position {
+        font-size: 20px;
+        display: inline; }
+      main div#about .card .user-content .position {
         color: #e24242;
+        display: inline-block;
         font-size: 25px;
         font-weight: bold;
         text-transform: uppercase; }
-      #about .card .user-content .content {
+      main div#about .card .user-content .content {
         text-align: left;
         color: #141414;
         font-size: 25px;
         font-weight: 400;
         line-height: 30px; }
-
-#blog {
-  width: 100%; }
-  #blog .container {
-    width: 80%; }
-    #blog .container .sub-heading {
+  main div#blog {
+    padding: 20px; }
+    main div#blog .sub-heading {
       text-align: center;
       color: #ffffff;
       font-size: 2rem; }
-  #blog h1 {
+    main div#blog h1 {
+      color: #ffffff;
+      text-align: center;
+      font-size: 100px;
+      font-weight: 200;
+      text-transform: uppercase; }
+    main div#blog .card {
+      background: rgba(255, 255, 255, 0.5);
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      height: 300px; }
+      main div#blog .card .blog-content {
+        display: inline-block;
+        width: 100%; }
+        main div#blog .card .blog-content .blog-header {
+          background: #ffffff;
+          width: 100%;
+          height: 40px;
+          padding: 0; }
+          main div#blog .card .blog-content .blog-header .title {
+            color: #e24242;
+            padding-left: 20px; }
+        main div#blog .card .blog-content .blog-body {
+          padding-left: 40px; }
+          main div#blog .card .blog-content .blog-body .body {
+            color: #141414;
+            font-size: 18px; }
+  main div#news-media h1 {
     color: #ffffff;
     text-align: center;
     font-size: 100px;
     font-weight: 200;
     text-transform: uppercase; }
-  #blog .card {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 10px;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    height: 300px; }
-    #blog .card .blog-content {
-      display: inline-block;
-      width: 100%; }
-      #blog .card .blog-content .blog-header {
-        background: #ffffff;
-        width: 100%;
-        height: 40px; }
-        #blog .card .blog-content .blog-header .title {
-          color: #e24242;
-          padding-left: 20px; }
-      #blog .card .blog-content .blog-body {
-        padding-left: 40px; }
-        #blog .card .blog-content .blog-body .body {
-          color: #141414;
-          font-size: 16px; }
+  main div#news-media .sub-heading {
+    text-align: center;
+    color: #ffffff;
+    font-size: 28px; }
+  main div#news-media .card {
+    width: 60%;
+    background: rgba(255, 255, 255, 0.5);
+    float: none;
+    margin: 0 auto;
+    display: block; }
+    main div#news-media .card h2 {
+      color: #e24242;
+      font-size: 24px; }
+    main div#news-media .card p {
+      color: #141414;
+      font-size: 22px;
+      padding: 0 20px;
+      line-height: 40px; }
+    main div#news-media .card a {
+      text-decoration: underline;
+      color: #e24242;
+      font-size: 22px;
+      padding: 0 20px; }
+    main div#news-media .card.media {
+      text-align: center; }
+      main div#news-media .card.media h2 {
+        text-align: left; }
+  main div#contact-us {
+    text-align: center;
+    padding-bottom: 100px; }
+    main div#contact-us h1 {
+      color: #ffffff;
+      text-align: center;
+      font-size: 100px;
+      font-weight: 200;
+      text-transform: uppercase; }
 
 footer {
   background: rgba(255, 255, 255, 0.5);
   width: 100%;
-  display: inline-block; }
+  float: left; }
+  footer div {
+    float: left; }
   footer .logo {
-    float: left;
     background: url("../images/logo.png") no-repeat center center;
     background-size: cover;
     width: 80px;
-    height: 80px;
-    display: inline-block; }
+    height: 80px; }
   footer .copyright {
-    padding: 15px; }
+    margin-top: 40px; }
   footer .footer-logo {
     background: url("../images/logo.png") no-repeat center center;
     background-size: cover;
@@ -296,67 +300,16 @@ footer {
     right: 50%;
     margin-top: -80px; }
   footer .social {
-    text-align: right; }
-    footer .social div {
-      display: inline-block;
-      width: 80px;
-      height: 80px;
-      padding-left: -20px; }
-    footer .social .facebook {
-      background: url("../images/footer_fb.png") no-repeat center center;
-      background-size: cover; }
-    footer .social .twitter {
-      background: url("../images/footer_twitter.png") no-repeat center center;
-      background-size: cover; }
-    footer .social .instagram {
-      background: url("../images/footer_instagram.png") no-repeat center center;
-      background-size: cover; }
-
-#news-media {
-  width: 100%; }
-  #news-media .container {
-    width: 60%; }
-    #news-media .container h1 {
-      color: #ffffff;
-      text-align: center;
-      font-size: 100px;
-      font-weight: 200;
-      text-transform: uppercase; }
-    #news-media .container .sub-heading {
-      text-align: center;
-      color: #ffffff;
-      font-size: 30px; }
-    #news-media .container .card {
-      background-color: rgba(255, 255, 255, 0.5);
-      padding: 10px;
-      box-sizing: border-box;
-      width: 90%;
-      display: block;
-      padding: 15px 25px; }
-      #news-media .container .card h2 {
-        color: #e24242;
-        font-size: 30px; }
-      #news-media .container .card p {
-        color: #141414;
-        font-size: 1.8rem;
-        padding: 0 20px;
-        line-height: 40px; }
-      #news-media .container .card a {
-        text-decoration: underline;
-        color: #e24242;
-        font-size: 1.8rem;
-        padding: 0 20px; }
-      #news-media .container .card .media {
-        text-align: center; }
-
-#contact-us {
-  margin-top: 200px;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 100px; }
-  #contact-us h1 {
-    color: #ffffff;
-    text-align: center;
-    font-size: 100px;
-    font-weight: 200;
-    text-transform: uppercase; }
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    padding-left: -20px; }
+  footer .facebook {
+    background: url("../images/footer_fb.png") no-repeat center center;
+    background-size: cover; }
+  footer .twitter {
+    background: url("../images/footer_twitter.png") no-repeat center center;
+    background-size: cover; }
+  footer .instagram {
+    background: url("../images/footer_instagram.png") no-repeat center center;
+    background-size: cover; }

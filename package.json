@@ -4,7 +4,6 @@
     "description": "An awareness site to break stigma of people not knowing all info given by Gov’t and to know how you could access info to the Gov’t.",
     "main": "index.js",
     "scripts": {
-        "sass": "node-sass -w scss/ -o dist/css/ --recursive",
         "start": "node-sass -w scss/ -o finals/css/ --recursive"
     },
     "author": "Richard Evaristo",
