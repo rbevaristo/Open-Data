@@ -213,8 +213,6 @@ main div {
       font-size: 100px;
       font-weight: 200;
       text-transform: uppercase; }
-    main div#blog img {
-      width: 100%; }
     main div#blog .card {
       background: rgba(255, 255, 255, 0.5);
       width: 100%;
@@ -223,7 +221,7 @@ main div {
       height: 300px; }
       main div#blog .card .blog-content {
         display: inline-block;
-        width: 100%; }
+        width: 50%; }
         main div#blog .card .blog-content .blog-header {
           background: #ffffff;
           width: 100%;
@@ -237,6 +235,11 @@ main div {
           main div#blog .card .blog-content .blog-body .body {
             color: #141414;
             font-size: 18px; }
+      main div#blog .card .blog-img {
+        display: inline-block;
+        width: 50%; }
+        main div#blog .card .blog-img img {
+          width: 100%; }
   main div#news-media img {
     width: 100%; }
   main div#news-media h1 {

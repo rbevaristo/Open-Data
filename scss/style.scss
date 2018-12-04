@@ -298,10 +298,6 @@ main {
                 text-transform: uppercase;
             }
 
-            img {
-                width: 100%;
-            }
-
             .card {
                 background: rgba($light, 0.5);
                 width: 100%;
@@ -311,7 +307,7 @@ main {
 
                 .blog-content {
                     display: inline-block;
-                    width: 100%;
+                    width: 50%;
 
                     .blog-header {
                         background: $light;
@@ -332,6 +328,15 @@ main {
                             color: $dark;
                             font-size: 18px;
                         }
+                    }
+                }
+
+                .blog-img {
+                    display: inline-block;
+                    width: 50%;
+
+                    img {
+                        width: 100%;
                     }
                 }
             }
