@@ -213,6 +213,8 @@ main div {
       font-size: 100px;
       font-weight: 200;
       text-transform: uppercase; }
+    main div#blog img {
+      width: 100%; }
     main div#blog .card {
       background: rgba(255, 255, 255, 0.5);
       width: 100%;
@@ -235,6 +237,8 @@ main div {
           main div#blog .card .blog-content .blog-body .body {
             color: #141414;
             font-size: 18px; }
+  main div#news-media img {
+    width: 100%; }
   main div#news-media h1 {
     color: #ffffff;
     text-align: center;

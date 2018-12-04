@@ -298,6 +298,10 @@ main {
                 text-transform: uppercase;
             }
 
+            img {
+                width: 100%;
+            }
+
             .card {
                 background: rgba($light, 0.5);
                 width: 100%;
@@ -334,6 +338,10 @@ main {
         }
 
         &#news-media {
+            img {
+                width: 100%;
+            }
+
             h1 {
                 color: $light;
                 text-align: center;
